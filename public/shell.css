@@ -24,6 +24,10 @@ body {
   box-shadow: var(--orca-shadow-round-shell);
 }
 
+.sidebar-closed #main {
+  margin-left: var(--orca-spacing-md);
+}
+
 #main::before {
   content: "";
   background: var(--orca-color-bg-1);
