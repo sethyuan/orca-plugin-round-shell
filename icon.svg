@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title>Round Shell</title>
+  <desc>A rounded terminal icon for the Orca Note Round Shell plugin</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#2B2F3A"/>
+      <stop offset="100%" stop-color="#1B1F27"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#60A5FA"/>
+      <stop offset="100%" stop-color="#34D399"/>
+    </linearGradient>
+    <linearGradient id="gloss" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="12" flood-color="#0F0F10" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <!-- Outer rounded card -->
+  <rect x="32" y="32" width="448" height="448" rx="88" fill="url(#bg)" filter="url(#shadow)"/>
+
+  <!-- Subtle top gloss -->
+  <rect x="32" y="32" width="448" height="224" rx="88" fill="url(#gloss)"/>
+
+  <!-- Inner rounded terminal window -->
+  <rect x="76" y="96" width="360" height="320" rx="48" fill="#0F1218" opacity="0.85"/>
+
+  <!-- Prompt: > and _ -->
+  <g fill="none" stroke="url(#accent)" stroke-width="28" stroke-linecap="round" stroke-linejoin="round">
+    <!-- > chevron -->
+    <polyline points="160,312 244,256 160,200"/>
+    <!-- underscore -->
+    <line x1="268" y1="312" x2="352" y2="312"/>
+  </g>
+
+  <!-- Tiny window dots for a hint of UI -->
+  <g transform="translate(96,120)">
+    <circle cx="0" cy="0" r="6" fill="#F87171" opacity="0.9"/>
+    <circle cx="22" cy="0" r="6" fill="#FBBF24" opacity="0.9"/>
+    <circle cx="44" cy="0" r="6" fill="#34D399" opacity="0.9"/>
+  </g>
+</svg>
